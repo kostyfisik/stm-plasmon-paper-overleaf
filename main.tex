@@ -31,9 +31,9 @@
 %nobibnotes,
 %bibnotes,
  amsmath,amssymb,
- aps,
+%aps,
 %pra,
-%prb,
+prb,
 %rmp,
 %prstab,
 %prstper,
@@ -115,109 +115,42 @@ use the optional argument of the \verb+\item+ command to give the category of ea
 
 %\tableofcontents
 
-\section{\label{sec:level1}First-level heading}
+\section{\label{sec:intro}Introduction}
 
-This sample document demonstrates proper use of REV\TeX~4.1 (and
-\LaTeXe) in mansucripts prepared for submission to APS
-journals. Further information can be found in the REV\TeX~4.1
-documentation included in the distribution or available at
-\url{http://authors.aps.org/revtex4/}.
 
-When commands are referred to in this example file, they are always
-shown with their required arguments, using normal \TeX{} format. In
-this format, \verb+#1+, \verb+#2+, etc. stand for required
-author-supplied arguments to commands. For example, in
-\verb+\section{#1}+ the \verb+#1+ stands for the title text of the
-author's section heading, and in \verb+\title{#1}+ the \verb+#1+
-stands for the title text of the paper.
 
-Line breaks in section headings at all levels can be introduced using
-\textbackslash\textbackslash. A blank input line tells \TeX\ that the
-paragraph has ended. Note that top-level section headings are
-automatically uppercased. If a specific letter or word should appear in
-lowercase instead, you must escape it using \verb+\lowercase{#1}+ as
-in the word ``via'' above.
+Phenomenon of tunnel resonance and production of photons in the tunnel gap has been known for several decades [Lambec]. Research in this region can create prerequisites for realizing of operating circuits of electron-optical chips in which signals can be transmitted by photons, while the overall control of the circuit can be carried out by electrons. Such circuits provide a significant performance compared with traditional electronic circuits, in which all the processes of transmission and control are carried out by electrons.
 
-\subsection{\label{sec:level2}Second-level heading: Formatting}
+For the implementation of such circuits, creation of planar sources of photons or plasmons controlled by electrons is required. One example of such sources are classical semiconductor lasers with Fabry-Perrot resonators or micro-ring resonators [Zhukov]. However, their dimensions cannot be less than micron units, which, from a practical point of view, substantially limits their use.
 
-This file may be formatted in either the \texttt{preprint} or
-\texttt{reprint} style. \texttt{reprint} format mimics final journal output. 
-Either format may be used for submission purposes. \texttt{letter} sized paper should
-be used when submitting to APS journals.
+Submicron photon sources can be exemplified by the tunnel gap in STM [Elizabeth] or planar nanocontact [Bouhilier]. However, the efficiency of producing photons or plasmons is extremely low $10^{-6}-10^{-4}$.
 
-\subsubsection{Wide text (A level-3 head)}
-The \texttt{widetext} environment will make the text the width of the
-full page, as on page~\pageref{eq:wideeq}. (Note the use the
-\verb+\pageref{#1}+ command to refer to the page number.) 
-\paragraph{Note (Fourth-level head is run in)}
-The width-changing commands only take effect in two-column formatting. 
-There is no effect if text is in a single column.
+To enhance this effect, optical nanoantennas [Krasnok] can be used. Usually, optical antennas operate in a light in/light out system. In case of locating optical nanoantenna in the tunnel junction region, it becomes possible to excite the antenna by tunnel electrons, which leads to an increase in the efficiency of photons production by several orders of magnitude [Hecht]. In this case, the source of visible or near-IR photons, controlled by electrical signals, can have subwave dimensions.
 
-\subsection{\label{sec:citeref}Citations and References}
-A citation in text uses the command \verb+\cite{#1}+ or
-\verb+\onlinecite{#1}+ and refers to an entry in the bibliography. 
-An entry in the bibliography is a reference to another document.
+Efficiency of photons or plasmons production with the help of a nanocontact is a superposition of two phenomena: (1) the quantum process of inelastic electron tunnelling between the two sides of contact, to which the electric potential difference is applied, leading to the excitation of the optical mode in the contact region being a nanoantenna, and (2) energy relaxation of nanoantenna optical mode and emission of a photon or surface plasmon [Novotny].
 
-\subsubsection{Citations}
-Because REV\TeX\ uses the \verb+natbib+ package of Patrick Daly, 
-the entire repertoire of commands in that package are available for your document;
-see the \verb+natbib+ documentation for further details. Please note that
-REV\TeX\ requires version 8.31a or later of \verb+natbib+.
+  (1)
+  
+A convenient object for investigating a source of photons or plasmons controlled by electrons is the STM tip contact with the conductive substrate. When the STM tip approaches the metal substrate, due to the image potentials and redistribution of the electron density, a "reflection" of the tip is formed in the conductive substrate, which in turn can be considered as a dimer of two metallic nanoantennas, with localization of the electromagnetic field in the tunnel gap region. Thus, in the nanocontact region of the STM tip and the conductive substrate, the density of optical states (LDOS) for photons is increased by several orders in comparison with LDOS for a vacuum [Novotny]. This circumstance significantly influences , by increasing the quantum efficiency of the production of photons by electrons.
 
-\paragraph{Syntax}
-The argument of \verb+\cite+ may be a single \emph{key}, 
-or may consist of a comma-separated list of keys.
-The citation \emph{key} may contain 
-letters, numbers, the dash (-) character, or the period (.) character. 
-New with natbib 8.3 is an extension to the syntax that allows for 
-a star (*) form and two optional arguments on the citation key itself.
-The syntax of the \verb+\cite+ command is thus (informally stated)
-\begin{quotation}\flushleft\leftskip1em
-\verb+\cite+ \verb+{+ \emph{key} \verb+}+, or\\
-\verb+\cite+ \verb+{+ \emph{optarg+key} \verb+}+, or\\
-\verb+\cite+ \verb+{+ \emph{optarg+key} \verb+,+ \emph{optarg+key}\ldots \verb+}+,
-\end{quotation}\noindent
-where \emph{optarg+key} signifies 
-\begin{quotation}\flushleft\leftskip1em
-\emph{key}, or\\
-\texttt{*}\emph{key}, or\\
-\texttt{[}\emph{pre}\texttt{]}\emph{key}, or\\
-\texttt{[}\emph{pre}\texttt{]}\texttt{[}\emph{post}\texttt{]}\emph{key}, or even\\
-\texttt{*}\texttt{[}\emph{pre}\texttt{]}\texttt{[}\emph{post}\texttt{]}\emph{key}.
-\end{quotation}\noindent
-where \emph{pre} and \emph{post} is whatever text you wish to place 
-at the beginning and end, respectively, of the bibliographic reference
-(see Ref.~[\onlinecite{witten2001}] and the two under Ref.~[\onlinecite{feyn54}]).
-(Keep in mind that no automatic space or punctuation is applied.)
-It is highly recommended that you put the entire \emph{pre} or \emph{post} portion 
-within its own set of braces, for example: 
-\verb+\cite+ \verb+{+ \texttt{[} \verb+{+\emph{text}\verb+}+\texttt{]}\emph{key}\verb+}+.
-The extra set of braces will keep \LaTeX\ out of trouble if your \emph{text} contains the comma (,) character.
+As shown in [Greffet], localization of the metallic nanoantenna in the region of the tunnel junction of the STM tip and the metal substrate dramatically affects the production efficiency of surface plasmons at the interface between the conductive substrate and air. On the one hand, the presence of a plasmon nanoantenna leads to an additional increase in LDOS, and as a result , in comparison with the case without a nanoantenna, and on the other hand, an excited plasmon nanoantenna significantly increases the energy conversion efficiency from the optical mode of the tunnel junction to the surface plasmon wave energy . It should be noted that due to ohmic losses, which are always inherent in metallic nanoantennas, some of the optical mode energy is expended on the Joule loss and heating of the nanocontact region.
 
-The star (*) modifier to the \emph{key} signifies that the reference is to be 
-merged with the previous reference into a single bibliographic entry, 
-a common idiom in APS and AIP articles (see below, Ref.~[\onlinecite{epr}]). 
-When references are merged in this way, they are separated by a semicolon instead of 
-the period (full stop) that would otherwise appear.
+In this paper, we consider the energy conversion efficiency of tunnel electrons of a nanocontact, into the tunnel gap of which a metallic plasmon nanoantenna or dielectric nanoantenna from a material with a high refraction index is placed. It is shown that both types of nanoantennas (plasmon and dielectric) substantially increase the production efficiency of surface plasmon waves at the conductive substrate-air interface. The dielectric nanoantenna has a greater efficiency than the metallic one, which makes this type of nanoantennas more promising when realistic electro-optic circuits are implemented.
 
-\paragraph{Eliding repeated information}
-When a reference is merged, some of its fields may be elided: for example, 
-when the author matches that of the previous reference, it is omitted. 
-If both author and journal match, both are omitted.
-If the journal matches, but the author does not, the journal is replaced by \emph{ibid.},
-as exemplified by Ref.~[\onlinecite{epr}]. 
-These rules embody common editorial practice in APS and AIP journals and will only
-be in effect if the markup features of the APS and AIP Bib\TeX\ styles is employed.
 
-\paragraph{The options of the cite command itself}
-Please note that optional arguments to the \emph{key} change the reference in the bibliography, 
-not the citation in the body of the document. 
-For the latter, use the optional arguments of the \verb+\cite+ command itself:
-\verb+\cite+ \texttt{*}\allowbreak
-\texttt{[}\emph{pre-cite}\texttt{]}\allowbreak
-\texttt{[}\emph{post-cite}\texttt{]}\allowbreak
-\verb+{+\emph{key-list}\verb+}+.
 
+\section{\label{sec:numerical}Numerical modelling}
+Fig. 1 shows the general pattern of contact geometries in question: (1) metal tip – metal substrate, (2) metal tip – metal nanoantenna – metal substrate, (3) metal tip – dielectric nanoantenna – metal substrate. To simplify the problem under consideration, the STM tip was considered as a truncated cone, and the source of tunnel electrons was replaced by a point optical dipole. This approach is well proven in [Greffet].
+
+It is clear that the shape of the STM tip should influence the nanocontact LDOS and the efficiency of the SPP production. The probe shape should not make any significant changes to the qualitative pattern of the processes; therefore, we have not studied the probe shape influence in this work.
+
+\section{\label{sec:results}Results and discussions}
+
+	As shown by the presented results of numerical simulation, the introduction of a metal or dielectric nanoantenna into the nanocontact region substantially increases the efficiency of energy conversion of inelastically tunnelling electrons into the energy of a surface plasmon wave. Moreover, although the total amount of SPP energy (measured in W) in the case of a metallic antenna is higher, the efficiency of the dielectric nanoantenna itself is higher than the metallic one. This circumstance is explained by the fact that the total amount of energy passing from the tunnel electrons to the SPP energy is a superposition of efficiency of conversion into the electro-optical mode  and the efficiency of the nanoantenna  itself (see Expression 1). The influence of both terms of expression (1) on the overall efficiency of SPP production by two types of nanoantennas is shown in Fig. Term for a metallic antenna exceeds that for a dielectric antenna, which determines the total energy of the optical mode excited by tunnel electrons, while the efficiency of the metallic antenna is lower due to ohmic losses.
+
+Fig.  
+
+Although in the case of metallic nanoantennas, the total energy passing to the SPP energy is larger, the use of dielectric nanoantennas may prove more promising in the creation of real electro-optical circuits. The presence of ohmic losses in metallic nanostructures leads to an additional heating of the region around them, and in the case of the geometry under consideration, to heating the nanocontact region. This increase in temperature leads to a change in the dimensions of nanocontact elements, and consequently to a change in the tunnel gap, instability of the nanocontact and tunnel current. As is well known, a change in the tunnel gap dimensions in the STM by only 1 A leads to a change in the tunnel current by 1 order. In the case of STM, these variations in the tunnel gap dimensions are processed by the microscope feedback loop: the probe either approaches or leaves the substrate, maintaining the tunnel current magnitude. To implement compact electro-optical circuits, the nanocontact must be planar; in this case the introduction of a feedback mechanism that maintains the magnitude of tunnelling current between the nanocontact sides is not very realistic. This circumstance imposes restrictions on the use of metallic nanoantennas. In dielectric nanoantennas, ohmic losses at Joule heating are absent, which makes the heat balance in the nanocontact region more stable and, therefore, the more stable tunnel gap and tunnel current.
 \end{document}
 %
 % ****** End of file apssamp.tex ******
